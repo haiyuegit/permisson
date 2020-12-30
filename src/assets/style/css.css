@@ -1,0 +1,224 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    font-size:14px;
+    text-decoration: none;
+    border: none;
+    /* color: #666; */
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    
+}
+html,body,#app{
+    height:100%;
+}
+a{
+    text-decoration:none
+}
+
+.el-submenu .el-submenu__title{
+    height:45px;
+    line-height:45px;
+}
+.content{
+    background:#fff;
+    height:100%;
+    overflow-y: scroll;
+    padding:60px 20px 20px;
+    text-align:left;
+}
+.el-dropdown-menu__item--divided:before, .el-menu, .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+    background:none!important;
+}
+.bread .el-breadcrumb__inner a,.bread .el-breadcrumb__inner.is-link{
+    font-weight:normal
+}
+.normalInput.el-input{
+    width:180px;
+}
+.fix_btn span{
+    color:#fff;
+}
+.el-table__header thead tr th{
+    background:#f0f0f0;
+}
+.el-submenu{
+    border-bottom:1px solid #e5e5e5;
+}
+.page_bottom{
+    padding:10px 0;
+    text-align:right;
+}
+.el-dialog__header{
+    padding:8px 20px;
+    background:#f0f0f0;
+    text-align:left;
+    
+}
+.el-dialog__header span{
+    font-size:14px;
+}
+.el-dialog__headerbtn{
+    top:9px;
+}
+.limit_dialog .el-dialog__body{
+    max-height:500px;
+    overflow-y: scroll;
+}
+
+
+.base {
+    height: 150px;
+    left: 50%;
+    margin: -90px;
+    padding: 36px;
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    transform: rotateX(45deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+    box-sizing:content-box;
+  }
+  
+  .cube,
+  .cube:after,
+  .cube:before {
+    content: '';
+    float: left;
+    height: 36px;
+    position: absolute;
+    width: 0;
+  }
+  
+  /* Top */
+  .cube {
+    padding:20px;
+    background-color: #05afd1;
+    position: relative;
+    transform: translateZ(36px);
+    transform-style: preserve-3d;
+    transition: .25s;
+    box-shadow: 156px 156px 18px rgba(0, 0, 0, 0.1);
+    animation: anim 1s infinite;
+  }
+  .cube:after {
+    background-color: #049dbc;
+    transform: rotateX(-90deg) translateY(12px);
+    transform-origin: 100% 100%;
+  }
+  .cube:before {
+    background-color: #048ca7;
+    transform: rotateY(90deg) translateX(12px);
+    transform-origin: 100% 0;
+  }
+  .cube:nth-child(1) {
+    animation-delay: 0.05s;
+  }
+  .cube:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .cube:nth-child(3) {
+    animation-delay: 0.15s;
+  }
+  .cube:nth-child(4) {
+    animation-delay: 0.2s;
+  }
+  .cube:nth-child(5) {
+    animation-delay: 0.25s;
+  }
+  .cube:nth-child(6) {
+    animation-delay: 0.3s;
+  }
+  .cube:nth-child(7) {
+    animation-delay: 0.35s;
+  }
+  .cube:nth-child(8) {
+    animation-delay: 0.4s;
+  }
+  .cube:nth-child(9) {
+    animation-delay: 0.45s;
+  }
+
+
+.fade-enter-active,.fade-leave-active {
+    -webkit-transition: opacity .28s;
+    transition: opacity .28s
+}
+
+.fade-enter,.fade-leave-active {
+    opacity: 0
+}
+
+.fade-transform-enter-active,.fade-transform-leave-active {
+    -webkit-transition: all .5s;
+    transition: all .5s
+}
+
+.fade-transform-enter {
+    opacity: 0;
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px)
+}
+
+.fade-transform-leave-to {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px)
+}
+
+.demo-form-inline{
+    position: absolute;
+    top:40px;
+    left:20px;
+    background: #fff;
+    right:0;
+    z-index: 999;
+    padding:10px 0;
+}
+.demo-form-inline .el-form-item{
+    margin-bottom:0;
+}
+.top_wrap .el-form-item{
+    margin-bottom:10px;
+}
+
+.case_card{
+    margin-bottom:20px;
+}
+.case_card .el-card__header{
+    padding:10px 20px;
+}
+.el-tabs--border-card>.el-tabs__content{
+    padding:0
+}
+.el-tabs--border-card{
+    box-shadow:none;
+    border:none;
+}
+.caseError .cell input{
+    border:1px solid #f56c6c
+}
+
+.demo-form-inline .el-form-item{
+    margin-bottom:10px
+}
+
+.enable_href{
+    color:#409EFF;
+    cursor: pointer;
+}
+.disable_href{
+    color:#909399;
+    cursor: default;
+}
+
+@keyframes anim {
+    50% {
+        transform: translateZ(6px);
+    }
+}

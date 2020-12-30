@@ -1,0 +1,52 @@
+{
+  "name": "permission",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode env",
+    "alpha": "vue-cli-service build --mode alpha",
+    "build": "vue-cli-service build --mode build",
+    "lint": "vue-cli-service lint",
+    "analyz": "NODE_ENV=production npm_config_report=true npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-china-area-data": "^4.1.1",
+    "element-ui": "^2.4.7",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "babel-plugin-component": "^1.1.1",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
