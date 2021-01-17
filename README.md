@@ -43,7 +43,7 @@ npm run lint
 |--- index.js axios接口方法：permisson\src\service\index.js
 |--- afetch.js axios的拦截器instance.interceptors：permisson\src\config\afetch.js
 |--- env.env 测试/开发/生产环境地址
-|---该行为github上传测试代码用1
+|---该行为github上传测试代码用
 
 
 
