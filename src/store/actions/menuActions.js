@@ -23,13 +23,13 @@ export default {
         // let details = res?res.menuDetail : []
         commit(GET_PERMISSIONMENU_LIST,{res:params})
     },
-
+    //获取动态菜单
     async getMenuTreeAction({commit,state},params){
         let res = await service.queryMenuTree(params)
         let details = res?res.detail : null
         commit(GET_MENU_TREE,{res:details})
     },
-
+    //设置操作按钮
     setOperateBtns({commit,state},params){
         commit(SET_OPERATE_BTNS,{res:params})
     },

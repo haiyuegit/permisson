@@ -27,6 +27,7 @@ export default {
       /*if(!this.checkLogin()){
           this.$logout()
       }*/
+    //菜单权限设置
       if(this.checkLogin() && window.isPermission){
           this.$registMenu();
       }

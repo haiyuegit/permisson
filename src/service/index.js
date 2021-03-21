@@ -23,7 +23,7 @@ export default {
     //菜单
     queryMenuManageList : (params) => axios.post(api.menuManage.queryPage,params),
     queryRoleManageList : (params) => axios.post(api.menuManage.queryRoleManageList,params),
-    queryPermManageList : (params) => axios.post(api.menuManage.queryPermManageList,params),
+    // queryPermManageList : (params) => axios.post(api.menuManage.queryPermManageList,params),
     //字典管理列表
     queryWordManageList : (params) => axios.post(api.wordManage.queryWordManageList,params),
     addWord : (params) => axios.post(api.wordManage.addWord,params),
@@ -61,7 +61,7 @@ export default {
     assignResource : (params) => axios.post(api.permManage.assignResource,params),
 
     //角色
-    queryRoleManageList : (params) => axios.post(api.roleManage.queryList,params),
+    // queryRoleManageList : (params) => axios.post(api.roleManage.queryList,params),
     queryRoleManageDetail : (params) => axios.post(api.roleManage.detail,params),
     addRoleManage : (params) => axios.post(api.roleManage.add,params),
     getRoleManageTree : (params) => axios.post(api.roleManage.tree,params),
@@ -158,8 +158,8 @@ export default {
     queryOverdue : (params) => axios.post(api.litigant.queryOverdue,params),
     queryCreateCase : (params) => axios.post(api.litigant.queryCreateCase,params),
     caseQuery : (params) => axios.post(api.litigant.caseQuery,params),
-    agentList : (params) => axios.post(api.litigant.agentList,params),
-    applicantList : (params) => axios.post(api.litigant.applicantList,params),
+    // agentList : (params) => axios.post(api.litigant.agentList,params),
+    // applicantList : (params) => axios.post(api.litigant.applicantList,params),
     caseResourcesCreate : (params) => axios.post(api.litigant.caseResourcesCreate,params),
     caseinforcreate : (params) => axios.post(api.litigant.caseinforcreate,params),
     singleUpFile : (params) => fileAxios.post(api.upFile.singleUpFile,params),
@@ -201,7 +201,7 @@ export default {
     logAdd : (params) => axios.post(api.taskManage.logAdd,params),
     clientLogSearch : (params) => axios.post(api.taskManage.clientLogSearch,params),
 
-    taskAddClient : (params) => axios.post(api.taskManage.taskAddClient,params),
+    // taskAddClient : (params) => axios.post(api.taskManage.taskAddClient,params),
     taskClientEnable : (params) => axios.post(api.taskManage.taskClientEnable,params),
     taskClientDisable : (params) => axios.post(api.taskManage.taskClientDisable,params),
 

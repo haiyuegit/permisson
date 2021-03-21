@@ -81,7 +81,7 @@ let auth = {
             return true
         }
     },
-
+    //注册登陆
     registLogin(uname,data,callback){
         localStorage.setItem("authToken",data.accessToken)
         localStorage.setItem("uname",uname)
@@ -91,7 +91,7 @@ let auth = {
         axios.defaults.headers.common['Authorization'] = "Bearer " + data.accessToken;
         callback && callback()
     },
-
+    //退出
     logout(v){
         localStorage.removeItem("uname");
         localStorage.removeItem("authToken");

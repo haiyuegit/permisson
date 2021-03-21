@@ -194,7 +194,7 @@ Vue.prototype.selectData = selectData
 Vue.prototype.baseURL = process.env.VUE_APP_URL;
 
 
-window.isPermission = false; //是否开启权限菜单
+window.isPermission = true; //是否开启权限菜单
 
 
 new Vue({

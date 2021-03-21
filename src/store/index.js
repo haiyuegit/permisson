@@ -8,10 +8,10 @@ Vue.use(Vuex)
 
 
 const state = {
-	systemList:[],
-	permissionMenuList:[],
-	menuTree:null,
-    operateBtns:{},
+	systemList:[],//系统菜单
+	permissionMenuList:[],//许可菜单
+	menuTree:null,//菜单
+    operateBtns:{},//操作按钮
     includes:[]
 }
 

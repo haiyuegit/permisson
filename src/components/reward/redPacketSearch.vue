@@ -63,7 +63,7 @@ export default {
     computed:{
         ...mapState({
             operateBtns:'operateBtns'
-        }),
+        })
     },
     mounted() {
         console.log('-----=--',this.dataConfig)
