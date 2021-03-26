@@ -23,7 +23,7 @@ export default {
   },
   
   created() {
-      //打开注释--运行项目时首先打开登录页面
+      //登陆权限：打开注释--运行项目时首先打开登录页面
       /*if(!this.checkLogin()){
           this.$logout()
       }*/
@@ -40,8 +40,11 @@ export default {
       //   })
       // })
       // console.log(list)
-    
+
+
+    //  菜单权限开关main.js()
     if(!window.isPermission){
+      //通过 router.addRoutes 动态挂载这些路由
       $router.addRoutes(allPath)
     }
     // $router.addRoutes(allPath)

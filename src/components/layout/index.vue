@@ -17,7 +17,7 @@
                 </el-main>
             </el-container>
         </el-main>
-        <el-footer style="height:40px;">大金融</el-footer>
+        <el-footer style="height:40px;">金融</el-footer>
     </el-container>
 
 </template>
