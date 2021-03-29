@@ -18,6 +18,7 @@ export default {
         commit(GET_SYSTEM_LIST,{res:details})
     },
 
+    //根据用户信息获取后台返回的菜单路由（在router/auth.js文件中）
     getPermissionMenu({commit,state},params){
         // let res = await service.userPermissionMenu(params)
         // let details = res?res.menuDetail : []

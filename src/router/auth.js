@@ -4,14 +4,18 @@ import axios from '../config/afetch'
 
 let auth = {
     init(vue){
-        vue.prototype.$checkLogin = this.checkLogin
-        vue.prototype.$registLogin = this.registLogin
-        vue.prototype.$logout = this.logout
-        vue.prototype.$registMenu = this.$registMenu
-        vue.prototype.checkLogin = this.checkLogin
+        vue.prototype.$checkLogin = this.checkLogin //检查登陆
+        vue.prototype.$registLogin = this.registLogin //注册登陆
+        vue.prototype.$logout = this.logout //退出
+        vue.prototype.$registMenu = this.$registMenu //注册菜单
+        vue.prototype.checkLogin = this.checkLogin //登陆
     },
     
     registerAuth(vue,router){
+        // 路由判断登陆：根据路由配置文件的参数
+        // to：将要访问的路径
+        // form：从哪个路径跳转过来的
+        // next():是一个函数代表放行
         router.beforeEach((to, from, next) => {
             // if(!localStorage.getItem("authToken") && (to.name!=="login")){
             //     next({
@@ -28,6 +32,7 @@ let auth = {
         })
     },
 
+    //获取(后踢啊)动态路由
     async $registMenu(){
         let res = await this.$service.userPermissionMenu()
         
@@ -74,7 +79,7 @@ let auth = {
 
         $router.addRoutes(newPath)
     },
-
+    //登陆
     checkLogin(){
         if(localStorage.getItem("authToken")){
             window.AUTH_TOKEN = localStorage.getItem("authToken");
