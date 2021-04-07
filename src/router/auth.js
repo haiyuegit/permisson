@@ -32,7 +32,7 @@ let auth = {
         })
     },
 
-    //获取(后踢啊)动态路由
+    //获取动态路由
     async $registMenu(){
         let res = await this.$service.userPermissionMenu()
         

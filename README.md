@@ -32,6 +32,11 @@ npm run lint
 |--- pages 页面
 |--- service ajax请求
 |--- store vuex文件夹
+|--- router 是定义路由相关的配置;  
+|--- app.vue 是一个应用主组件；
+|--- main.js 是入口文件。
+
+
 
 ##总结
 |--- 菜单配置：
